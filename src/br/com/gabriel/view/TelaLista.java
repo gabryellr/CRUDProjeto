@@ -168,7 +168,8 @@ public class TelaLista extends javax.swing.JFrame implements ActionListener {
 
     public void listar() {
         lista.clear();
-       
+        // Gabriel, aqui estava o problema, sua classe Dao não tem o Método getAll como a minha, o nome do seu método é buscaProduto()
+        lista.addAll(dp.buscaProduto());
     }
 
     public static void main(String args[]) {
